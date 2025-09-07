@@ -1,0 +1,206 @@
+
+        /* Custom Styles */
+        :root {
+            --bg-dark: #020412;
+            --bg-space: #0a1128;
+            --bg-nebula: #1a2a44;
+            --accent-gold: #f5b94f;
+            --accent-gold-darker: #e0a84a;
+            --text-light: #e0e0e0;
+            --text-gray: #d1d5db;
+        }
+
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            overflow-x: hidden;
+            background: linear-gradient(-45deg, var(--bg-dark), var(--bg-space), var(--bg-nebula), var(--bg-dark));
+            background-size: 400% 400%;
+            animation: gradientBG 25s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        #star-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        /* Custom Colors & Shadows */
+        .text-accent { color: var(--accent-gold); }
+        .shadow-accent { box-shadow: 0 0 25px rgba(245, 185, 79, 0.6), 0 0 10px rgba(245, 185, 79, 0.8) inset; }
+        .shadow-accent-light { box-shadow: 0 0 15px rgba(245, 185, 79, 0.5); }
+
+        /* --- Scrollbar Styling --- */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-space); }
+        ::-webkit-scrollbar-thumb { background: var(--accent-gold); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--accent-gold-darker); }
+
+        /* --- Loader --- */
+        #loader {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: var(--bg-dark); z-index: 9999; display: flex;
+            justify-content: center; align-items: center;
+            transition: opacity 0.7s ease-out, visibility 0.7s;
+        }
+        .logo-loader {
+            width: 120px; height: 120px; color: var(--accent-gold);
+            animation: pulse-loader 2.5s infinite ease-in-out;
+        }
+        @keyframes pulse-loader {
+            0% { transform: scale(0.95); opacity: 0.7; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.7; }
+        }
+
+        /* --- Glassmorphi --- */
+        #modal-backdrop {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.5); backdrop-filter: blur(10px);
+            z-index: 100; opacity: 0; visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s;
+        }
+        #modal-backdrop.visible { opacity: 1; visibility: visible; }
+        #modal-content {
+            position: fixed; top: 50%; left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: rgba(26, 42, 68, 0.6);
+            border: 1px solid rgba(245, 185, 79, 0.3);
+            backdrop-filter: blur(20px);
+            border-radius: 1rem;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+        }
+        #modal-backdrop.visible #modal-content { transform: translate(-50%, -50%) scale(1); }
+        #modal-body ul { list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5b94f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 18 6-6-6-6'/%3E%3C/svg%3E"); }
+
+
+        /* --- ENHANCED Planet Styles --- */
+        @keyframes subtle-pulse {
+            0% { box-shadow: inset -10px -10px 20px rgba(0,0,0,0.2), 0 0 15px var(--planet-color), 0 0 5px var(--planet-color) inset; }
+            50% { box-shadow: inset -10px -10px 20px rgba(0,0,0,0.2), 0 0 25px var(--planet-color), 0 0 8px var(--planet-color) inset, 0 0 30px rgba(255, 255, 255, 0.2); }
+            100% { box-shadow: inset -10px -10px 20px rgba(0,0,0,0.2), 0 0 15px var(--planet-color), 0 0 5px var(--planet-color) inset; }
+        }
+        
+        @keyframes gentle-bob {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .planet-container {
+            display: flex; flex-direction: column; align-items: center;
+            gap: 1rem; cursor: pointer;
+            transition: transform 0.3s ease;
+            animation: gentle-bob 6s infinite ease-in-out;
+        }
+
+        .planet {
+            border-radius: 50%; position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: subtle-pulse 4s infinite ease-in-out;
+            background-color: var(--planet-color);
+            /* This gradient gives a subtle 3D lighting effect */
+            background-image: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.8), rgba(255,255,255,0) 70%);
+        }
+
+        .planet-name {
+            color: var(--text-gray); font-weight: 600; font-size: 0.9rem;
+            text-align: center; transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+        
+        .planet-container:hover { transform: scale(1.1); }
+        .planet-container:hover .planet {
+            box-shadow: inset -10px -10px 20px rgba(0,0,0,0.2), 0 0 40px var(--planet-color), 0 0 20px var(--accent-gold) inset;
+        }
+        .planet-container:hover .planet-name {
+            color: var(--accent-gold); text-shadow: 0 0 10px rgba(245, 185, 79, 0.7);
+        }
+
+        .planet.has-ring::before {
+            content: ''; position: absolute; top: 50%; left: 50%;
+            width: 160%; height: 160%;
+            border-radius: 50%;
+            border: 3px solid rgba(245, 185, 79, 0.4);
+            box-shadow: 0 0 15px rgba(245, 185, 79, 0.3), inset 0 0 5px rgba(245, 185, 79, 0.2);
+            transform: translate(-50%, -50%) rotateX(75deg) rotateZ(-10deg);
+            z-index: -1;
+            transition: transform 0.4s ease;
+        }
+        .planet-container:hover .planet.has-ring::before {
+            transform: translate(-50%, -50%) rotateX(75deg) rotateZ(5deg) scale(1.05);
+        }
+
+        /* --- Scroll-triggered Animations --- */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* --- Hero Section Intro Animations --- */
+        .hero-logo { animation: fade-in-down 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s both; } /* ✨ التعديل الأول هنا */
+        .hero-title { animation: fade-in-up 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s both; }
+        .hero-subtitle { animation: fade-in-up 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s both; }
+        .hero-button { animation: fade-in-up 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s both; }
+
+        @keyframes fade-in-down {
+            from { opacity: 0; transform: translateY(-30px) scale(0.9); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        @keyframes fade-in-up {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* IMPROVED Hero Button */
+        .hero-button {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(45deg, var(--accent-gold), var(--accent-gold-darker));
+        }
+        .hero-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transform: skewX(-25deg);
+            transition: left 0.7s ease;
+        }
+        .hero-button:hover::before {
+            left: 150%;
+        }
+
+        /* Thematic footer */
+        footer {
+            position: relative;
+        }
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to top, rgba(10, 17, 40, 0.4), transparent);
+            z-index: -1;
+            pointer-events: none;
+        }
+  
