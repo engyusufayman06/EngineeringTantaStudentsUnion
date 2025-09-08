@@ -1,5 +1,4 @@
-
-        /* Custom Styles */
+ /* Custom Styles & Design Enhancements */
         :root {
             --bg-dark: #020412;
             --bg-space: #0a1128;
@@ -64,7 +63,7 @@
             100% { transform: scale(0.95); opacity: 0.7; }
         }
 
-        /* --- Glassmorphi --- */
+        /* --- Glassmorphism Modal --- */
         #modal-backdrop {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background-color: rgba(0,0,0,0.5); backdrop-filter: blur(10px);
@@ -103,6 +102,12 @@
             gap: 1rem; cursor: pointer;
             transition: transform 0.3s ease;
             animation: gentle-bob 6s infinite ease-in-out;
+            position: relative; 
+        }
+        
+        /* ✨ FIX: Pauses the bobbing animation on hover so only scaling occurs */
+        .planet-container:hover {
+            animation-play-state: paused;
         }
 
         .planet {
@@ -110,16 +115,23 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             animation: subtle-pulse 4s infinite ease-in-out;
             background-color: var(--planet-color);
-            /* This gradient gives a subtle 3D lighting effect */
             background-image: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.8), rgba(255,255,255,0) 70%);
+            overflow: hidden; 
         }
 
         .planet-name {
             color: var(--text-gray); font-weight: 600; font-size: 0.9rem;
-            text-align: center; transition: color 0.3s ease, text-shadow 0.3s ease;
+            text-align: center; transition: all 0.3s ease; 
         }
         
-        .planet-container:hover { transform: scale(1.1); }
+        .planet-container:hover .planet {
+            transform: scale(1.1);
+        }
+        .planet-container:hover .planet-name {
+            transform: translateY(15px); 
+            z-index: 10; 
+        }
+
         .planet-container:hover .planet {
             box-shadow: inset -10px -10px 20px rgba(0,0,0,0.2), 0 0 40px var(--planet-color), 0 0 20px var(--accent-gold) inset;
         }
@@ -127,19 +139,70 @@
             color: var(--accent-gold); text-shadow: 0 0 10px rgba(245, 185, 79, 0.7);
         }
 
-        .planet.has-ring::before {
-            content: ''; position: absolute; top: 50%; left: 50%;
-            width: 160%; height: 160%;
+        .planet-container.has-ring::before {
+            content: ''; position: absolute; 
+            top: 48px; /* Half of planet height (96px) */
+            left: 50%;
+            width: 154px; /* 96px * 1.6 */
+            height: 154px; /* 96px * 1.6 */
             border-radius: 50%;
             border: 3px solid rgba(245, 185, 79, 0.4);
             box-shadow: 0 0 15px rgba(245, 185, 79, 0.3), inset 0 0 5px rgba(245, 185, 79, 0.2);
             transform: translate(-50%, -50%) rotateX(75deg) rotateZ(-10deg);
-            z-index: -1;
             transition: transform 0.4s ease;
         }
-        .planet-container:hover .planet.has-ring::before {
+
+        @media (min-width: 768px) {
+             .planet-container.has-ring::before {
+                top: 64px; /* Half of desktop planet height (128px) */
+                width: 205px; /* 128px * 1.6 */
+                height: 205px; /* 128px * 1.6 */
+             }
+        }
+
+        .planet-container:hover.has-ring::before {
             transform: translate(-50%, -50%) rotateX(75deg) rotateZ(5deg) scale(1.05);
         }
+        
+        /* Styles for the Prep Helper Moon */
+        .prep-helper-moon .planet {
+            background-color: #e0e0e0;
+            --planet-color: #e0e0e0;
+            background-image: radial-gradient(circle at 30% 30%, rgba(255,255,255,1), rgba(255,255,255,0) 80%);
+        }
+        .prep-helper-moon.has-ring::before {
+            border-color: rgba(224, 224, 224, 0.4);
+            box-shadow: 0 0 15px rgba(224, 224, 224, 0.3), inset 0 0 5px rgba(224, 224, 224, 0.2);
+        }
+        
+        /* Moon Craters */
+        .moon-crater {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(0,0,0,0.1);
+            box-shadow: inset 1px 1px 4px rgba(0,0,0,0.2);
+        }
+        .crater-1 { top: 20%; left: 55%; width: 25%; height: 25%; }
+        .crater-2 { top: 50%; left: 20%; width: 18%; height: 18%; }
+        .crater-3 { top: 65%; left: 65%; width: 15%; height: 15%; }
+
+
+        /* Mobile/Desktop layout handling */
+        @media (min-width: 768px) {
+            .prep-helper-moon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10;
+                animation: none; 
+            }
+            .orbiting-planet {
+                position: absolute;
+                transition: top 0.5s ease, left 0.5s ease;
+            }
+        }
+
 
         /* --- Scroll-triggered Animations --- */
         .fade-in-section {
@@ -153,7 +216,7 @@
         }
         
         /* --- Hero Section Intro Animations --- */
-        .hero-logo { animation: fade-in-down 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s both; } /* ✨ التعديل الأول هنا */
+        .hero-logo { animation: fade-in-down 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s both; }
         .hero-title { animation: fade-in-up 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s both; }
         .hero-subtitle { animation: fade-in-up 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s both; }
         .hero-button { animation: fade-in-up 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s both; }
@@ -203,4 +266,3 @@
             z-index: -1;
             pointer-events: none;
         }
-  
