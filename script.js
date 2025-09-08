@@ -1,13 +1,13 @@
    // Data for Committees
         const committeesData = [
             { title: "اللجنة العلمية", color: "rgba(245, 185, 79, 0.8)", hasRing: true, content: `<h4 class="text-xl font-semibold text-accent mb-3">🎯 الهدف</h4><p class="mb-4">تهدف اللجنة العلمية باتحاد طلاب هندسة طنطا إلى تنمية التفكير العلمي لدى الطلاب من خلال الأنشطة المختلفة، والمساهمة في تعزيز النشاط العلمي داخل الكلية. كما تشارك في المسابقات العلمية على مستوى الجامعة، وتساهم في نشر الثقافة العلمية عبر الندوات، بالإضافة إلى تنمية القدرات الذهنية من خلال تكوين فرق متخصصة.</p><h4 class="text-xl font-semibold text-accent mt-4 mb-3">🛠️ المسؤوليات</h4><ul class="list-disc list-inside space-y-2 mb-4"><li>إعداد جداول الإشغالات لمعرفة إتاحة المدرجات وقت الحاجة.</li><li>متابعة مناديب الفرق والمستويات والإجابة عن استفساراتهم لضمان وصول المعلومة الصحيحة للطلاب.</li><li>الإشراف على فريق Prep Helper المخصص لمساعدة طلاب المستوى الصفري بشكل خاص.</li><li>متابعة الجمعيات العلمية وأنشطتها المختلفة.</li></ul><h4 class="text-xl font-semibold text-accent mt-4 mb-3">📌 الأنشطة</h4><ul class="list-disc list-inside space-y-2"><li><b>الورش الصيفية:</b> مجموعة ورش متنوعة لتنمية مهارات الطلاب خلال الإجازة الصيفية، يتراوح عددها بين 15 – 30 ورشة.</li><li><b>إيفنت الحريفة:</b> فعالية ترفيهية تحمل طابعًا علميًا لكسر الروتين وتشجيع الطلاب.</li><li><b>إيفنت "وكأنك سينيور":</b> يتيح لطلاب المستوى الثاني والثالث التعرف على مشاريع التخرج والإجابة عن تساؤلاتهم.</li><li><b>الاحتفال بآخر يوم للمستوى الصفري:</b> بالتعاون مع لجنة الأسر واللجنة الفنية، للاحتفاء بطلاب المستوى الصفري ومشاركة فرحتهم.</li></ul>` },
-            { title: "اللجنة الثقافية", color: "rgba(139, 92, 246, 0.8)", hasRing: true, content: `<h4 class="text-xl font-semibold text-accent mb-3">🎯 الهدف</h4><p class="mb-4">اللجنة الثقافية مسؤولة عن تنظيم الأنشطة الثقافية داخل الكلية، وفتح مجالات جديدة للطلاب يكتشفوا من خلالها قدراتهم. دور اللجنة لا يقتصر على تعريف الطلاب باحتياجات المجتمع، بل يمتد لمساعدتهم على تطوير مهاراتهم الشخصية والفكرية وزيادة وعيهم بالقضايا المختلفة.</p><h4 class="text-xl font-semibold text-accent mt-4 mb-3">📌 الأنشطة</h4><ul class="list-disc list-inside space-y-2"><li><b>مسابقة العباقرة هندسة:</b> لإبراز الثقافة العامة والمعرفة الواسعة لدى الطلاب.</li><li><b>مسابقة القرآن الكريم:</b> شارك فيها عدد كبير من الطلاب بهدف تشجيعهم على الحفظ والتدبر.</li><li><b>المشاركة في مهرجان "حريفة هندسة طنطا":</b> بالتعاون مع اللجان الأخرى.</li><li><b>فوازير "سلي اتحادك":</b> مسابقة دينية وثقافية شهدت مشاركة كبيرة.</li><li><b>دعم الأفكار الجديدة:</b> اللجنة دائمًا فاتحة أبوابها لأي اقتراح من الطلاب.</li></ul>` },
+            { title: "اللجنة الثقافية", color: "rgba(59, 130, 246, 0.8)", hasRing: true, content: `<h4 class="text-xl font-semibold text-accent mb-3">🎯 الهدف</h4><p class="mb-4">اللجنة الثقافية مسؤولة عن تنظيم الأنشطة الثقافية داخل الكلية، وفتح مجالات جديدة للطلاب يكتشفوا من خلالها قدراتهم. دور اللجنة لا يقتصر على تعريف الطلاب باحتياجات المجتمع، بل يمتد لمساعدتهم على تطوير مهاراتهم الشخصية والفكرية وزيادة وعيهم بالقضايا المختلفة.</p><h4 class="text-xl font-semibold text-accent mt-4 mb-3">📌 الأنشطة</h4><ul class="list-disc list-inside space-y-2"><li><b>مسابقة العباقرة هندسة:</b> لإبراز الثقافة العامة والمعرفة الواسعة لدى الطلاب.</li><li><b>مسابقة القرآن الكريم:</b> شارك فيها عدد كبير من الطلاب بهدف تشجيعهم على الحفظ والتدبر.</li><li><b>المشاركة في مهرجان "حريفة هندسة طنطا":</b> بالتعاون مع اللجان الأخرى.</li><li><b>فوازير "سلي اتحادك":</b> مسابقة دينية وثقافية شهدت مشاركة كبيرة.</li><li><b>دعم الأفكار الجديدة:</b> اللجنة دائمًا فاتحة أبوابها لأي اقتراح من الطلاب.</li></ul>` },
             { title: "لجنة الجوالة والخدمة العامة", color: "rgba(34, 197, 94, 0.8)", hasRing: true, content: `<h4 class="text-xl font-semibold text-accent mb-3">🎯 الهدف</h4><p class="mb-4">تختص بتنظيم أنشطة الحركة الكشفية والإرشادية داخل الكلية، بجانب تنفيذ برامج خدمة المجتمع والبيئة. تهدف إلى المساهمة في تنمية المجتمع وإشراك الطلاب في مشروعات الخدمة العامة القومية.</p><h4 class="text-xl font-semibold text-accent mt-4 mb-3">🛠️ مهام اللجنة</h4><div class="space-y-3"><div><h5 class="font-bold text-lg text-white">🔹 عشيرة الجوالة</h5><p>حركة كشفية واجتماعية تنظم فعاليات وأنشطة مثل المهرجان الكشفي لتوفير الدعم المعنوي والأنشطة التربوية للطلاب.</p></div><div><h5 class="font-bold text-lg text-white">🔹 الخدمات العامة</h5><p>متابعة جودة وأسعار الكافيتيريا، الحفاظ على نظافة المسجد، ومتابعة وصيانة الأعطال التي تؤثر على الطلاب.</p></div></div>` },
             { title: "لجنة الأسر", color: "rgba(239, 68, 68, 0.8)", hasRing: true, content: `<h4 class="text-xl font-semibold text-accent mb-3">🎯 الهدف</h4><p>تهدف لجنة الأسر إلى خلق بيئة طلابية نشطة داخل الكلية من خلال تشجيع الطلاب على تكوين أسر طلابية، وتبني أفكارهم ومبادراتهم. تسعى اللجنة إلى:</p><ul class="list-disc list-inside space-y-2 mt-3"><li>تنمية روح الانتماء والعمل الجماعي بين الطلاب.</li><li>دعم المواهب الطلابية في المجالات الثقافية، الرياضية، والفنية.</li><li>تيسير التصاريح اللازمة لأنشطة الأسر.</li><li>تنسيق الأنشطة المشتركة بين الأسر.</li><li>توفير الدعم اللازم للأسر لإفادة المجتمع الطلابي.</li></ul>` },
-            { title: "اللجنة الاجتماعية والرحلات", color: "rgba(59, 130, 246, 0.8)", hasRing: true, content: `<h4 class="text-xl font-semibold text-accent mb-3">🎯 الأهداف</h4><ul class="list-disc list-inside space-y-2 mb-4"><li>تنمية الروابط الاجتماعية بين الطلاب وأعضاء هيئة التدريس.</li><li>إشاعة روح التعاون والأخوة وبث الروح الجامعية.</li><li>تنظيم الفعاليات والرحلات والمعسكرات.</li><li>دعم الطلاب غير القادرين ماديًا من خلال ميزانية التكافل.</li><li>توزيع دعم الكتاب الجامعي بما يحقق مبدأ تكافؤ الفرص.</li></ul><h4 class="text-xl font-semibold text-accent mt-4 mb-3">📌 الأنشطة والبرامج</h4><ul class="list-disc list-inside space-y-2"><li><b>مبادرات التكافل والدعم:</b> مثل "أدواتك لغيرك" وكتب غير المقتدرين.</li><li><b>الرحلات:</b> تنظيم رحلات ترفيهية لتجديد طاقات الطلاب.</li><li><b>الأنشطة الاجتماعية:</b> مثل إيفنت "حريفة هندسة" ودورات الشطرنج.</li></ul>` },
+            { title: "اللجنة الاجتماعية والرحلات", color: "rgba(168, 85, 247, 0.8)", hasRing: true, content: `<h4 class="text-xl font-semibold text-accent mb-3">🎯 الأهداف</h4><ul class="list-disc list-inside space-y-2 mb-4"><li>تنمية الروابط الاجتماعية بين الطلاب وأعضاء هيئة التدريس.</li><li>إشاعة روح التعاون والأخوة وبث الروح الجامعية.</li><li>تنظيم الفعاليات والرحلات والمعسكرات.</li><li>دعم الطلاب غير القادرين ماديًا من خلال ميزانية التكافل.</li><li>توزيع دعم الكتاب الجامعي بما يحقق مبدأ تكافؤ الفرص.</li></ul><h4 class="text-xl font-semibold text-accent mt-4 mb-3">📌 الأنشطة والبرامج</h4><ul class="list-disc list-inside space-y-2"><li><b>مبادرات التكافل والدعم:</b> مثل "أدواتك لغيرك" وكتب غير المقتدرين.</li><li><b>الرحلات:</b> تنظيم رحلات ترفيهية لتجديد طاقات الطلاب.</li><li><b>الأنشطة الاجتماعية:</b> مثل إيفنت "حريفة هندسة" ودورات الشطرنج.</li></ul>` },
             { title: "اللجنة الرياضية", color: "rgba(249, 115, 22, 0.8)", hasRing: true, content: `<h4 class="text-xl font-semibold text-accent mb-3">🎯 الهدف</h4><ul class="list-disc list-inside space-y-2 mb-4"><li>بث الروح الرياضية بين الطلاب وتشجيع المواهب.</li><li>تنمية المهارات الرياضية وصقلها.</li><li>تنظيم الأنشطة الرياضية داخل الكلية.</li><li>المشاركة في المهرجانات الرياضية وتمثيل الكلية.</li></ul><h4 class="text-xl font-semibold text-accent mt-4 mb-3">📌 الأنشطة</h4><ul class="list-disc list-inside space-y-2"><li>دورة كرة القدم السنوية.</li><li>دورة تنس الطاولة (البنج).</li><li>إيفينت "حريفة هندسة".</li><li>متابعة منتخبات الكلية في مختلف الألعاب.</li></ul>` },
             { title: "اللجنة الفنية", color: "rgba(217, 70, 239, 0.8)", hasRing: true, content: `<h4 class="text-xl font-semibold text-accent mb-3">🎯 الهدف</h4><p class="mb-4">تهدف اللجنة الفنية إلى اكتشاف المواهب الفنية بين الطلاب ورعايتها، وتشجيع التعبير الإبداعي في مختلف المجالات مثل الرسم، والموسيقى، والتمثيل، والتصوير. تعمل اللجنة على إثراء الحياة الجامعية بالأنشطة الفنية التي تساهم في تنمية الذوق العام وبناء شخصية الطالب.</p><h4 class="text-xl font-semibold text-accent mt-4 mb-3">📌 الأنشطة</h4><ul class="list-disc list-inside space-y-2"><li>تنظيم المعارض الفنية لعرض أعمال الطلاب.</li><li>إقامة المسابقات الفنية في مختلف المجالات.</li><li>عقد ورش عمل فنية لتطوير مهارات الطلاب.</li><li>المشاركة في المهرجانات والفعاليات الفنية على مستوى الجامعة.</li></ul>` },
-            { title: "Prep Helper", color: "rgba(22, 163, 74, 0.8)", hasRing: true, content: `<h4 class="text-xl font-semibold text-accent mb-3">💡 إيه هو تيم بريب؟</h4><p class="mb-4">تيم بريب هو الصديق الشخصي لطلاب المستوى الصفري (إعدادي)، موجود دايمًا للرد على أي استفسار أو مشكلة بتواجههم.<br>ببساطة… هو ChatGPT بتاع طالب إعدادي 👨‍🎓✨</p><h4 class="text-xl font-semibold text-accent mt-4 mb-3">🎯 الهدف من وجوده</h4><ul class="list-disc list-inside space-y-2 mb-4"><li>توفير وسيلة سهلة للتواصل بين طلاب إعدادي والمسؤولين عنهم.</li><li>سرعة الرد على الاستفسارات.</li><li>توحيد مصدر المعلومة وضمان صحتها وموثوقيتها.</li></ul><h4 class="text-xl font-semibold text-accent mt-4 mb-3">📞 إزاي نتواصل معاهم؟</h4><p>عن طريق الواتساب على الرقم المخصص للفريق:<br><a href="https://wa.me/201228487925" class="font-bold text-white hover:underline text-lg" target="_blank" dir="ltr">📱 +20 12 28487925</a></p>` },
+            { title: "Prep Helper", color: "rgba(224, 224, 224, 0.9)", hasRing:false, content: `<h4 class="text-xl font-semibold text-accent mb-3">💡 إيه هو تيم بريب؟</h4><p class="mb-4">تيم بريب هو الصديق الشخصي لطلاب المستوى الصفري (إعدادي)، موجود دايمًا للرد على أي استفسار أو مشكلة بتواجههم.<br>ببساطة… هو ChatGPT بتاع طالب إعدادي 👨‍🎓✨</p><h4 class="text-xl font-semibold text-accent mt-4 mb-3">🎯 الهدف من وجوده</h4><ul class="list-disc list-inside space-y-2 mb-4"><li>توفير وسيلة سهلة للتواصل بين طلاب إعدادي والمسؤولين عنهم.</li><li>سرعة الرد على الاستفسارات.</li><li>توحيد مصدر المعلومة وضمان صحتها وموثوقيتها.</li></ul><h4 class="text-xl font-semibold text-accent mt-4 mb-3">📞 إزاي نتواصل معاهم؟</h4><p>عن طريق الواتساب على الرقم المخصص للفريق:<br><a href="https://wa.me/201228487925" class="font-bold text-white hover:underline text-lg" target="_blank" dir="ltr">📱 +20 12 28487925</a></p>` },
         ];
 
         // Main App Logic
@@ -34,7 +34,7 @@
                 };
             }
             
-            // --- REVERTED to simpler Starfield Module ---
+            // --- Starfield Module ---
             function initStarfield() {
                 const ctx = elements.starCanvas.getContext('2d');
                 let stars = [];
@@ -143,34 +143,93 @@
                     }, 2500);
                 });
             }
-
+            
             function initGalaxy() {
-                const fragment = document.createDocumentFragment();
-                committeesData.forEach((committee, index) => {
+                const galaxyDisplay = document.getElementById('galaxy-display');
+                if (!galaxyDisplay) return;
+                galaxyDisplay.innerHTML = ''; 
+
+                const prepHelperData = committeesData.find(c => c.title.includes("Prep Helper"));
+                const otherCommittees = committeesData.filter(c => !c.title.includes("Prep Helper"));
+
+                const createCelestialBody = (committee, isMoon = false) => {
                     const planetContainer = document.createElement('div');
                     planetContainer.className = 'planet-container';
-                    planetContainer.dataset.index = index;
+                    planetContainer.dataset.index = committeesData.indexOf(committee);
+
+                    if (isMoon) {
+                        planetContainer.classList.add('prep-helper-moon');
+                    } else {
+                        planetContainer.classList.add('orbiting-planet');
+                    }
                     
-                    planetContainer.style.animationDelay = `${index * 0.2}s`;
-                    planetContainer.style.animationDuration = `${Math.random() * 4 + 5}s`;
+                    if (committee.hasRing) {
+                        planetContainer.classList.add('has-ring');
+                    }
+                    
+                    planetContainer.style.animationDelay = `${Math.random() * 0.5}s`;
+                    planetContainer.style.animationDuration = `${Math.random() * 4 + 6}s`;
 
                     const planetDiv = document.createElement('div');
-                    // REVERTED to simpler classes
-                    let classes = `planet w-24 h-24 md:w-32 md:h-32`;
-                    if (committee.hasRing) classes += ' has-ring';
-                    planetDiv.className = classes;
+                    planetDiv.className = `planet w-24 h-24 md:w-32 md:h-32`;
                     planetDiv.style.backgroundColor = committee.color;
                     planetDiv.style.setProperty('--planet-color', committee.color);
                     
+                    if (isMoon) {
+                        for(let i = 1; i <= 3; i++) {
+                            const crater = document.createElement('div');
+                            crater.className = `moon-crater crater-${i}`;
+                            planetDiv.appendChild(crater);
+                        }
+                    }
+
                     const planetNameSpan = document.createElement('span');
                     planetNameSpan.className = 'planet-name';
                     planetNameSpan.textContent = committee.title;
 
                     planetContainer.appendChild(planetDiv);
                     planetContainer.appendChild(planetNameSpan);
-                    fragment.appendChild(planetContainer);
+                    return planetContainer;
+                };
+                
+                if (prepHelperData) {
+                    galaxyDisplay.appendChild(createCelestialBody(prepHelperData, true));
+                }
+                
+                otherCommittees.forEach(committee => {
+                    galaxyDisplay.appendChild(createCelestialBody(committee, false));
                 });
-                elements.galaxyContainer.appendChild(fragment);
+            }
+            
+            function positionPlanetsInOrbit() {
+                const galaxyDisplay = document.getElementById('galaxy-display');
+                if (!galaxyDisplay || window.innerWidth < 768) {
+                    const orbitingPlanets = galaxyDisplay.querySelectorAll('.orbiting-planet');
+                    orbitingPlanets.forEach(p => {
+                        p.style.left = '';
+                        p.style.top = '';
+                    });
+                    return;
+                }
+
+                const orbitingPlanets = galaxyDisplay.querySelectorAll('.orbiting-planet');
+                const numPlanets = orbitingPlanets.length;
+                if (numPlanets === 0) return;
+
+                const radiusX = galaxyDisplay.offsetWidth * 0.5 - 80;
+                const radiusY = galaxyDisplay.offsetHeight * 0.5 - 80;
+                const centerX = galaxyDisplay.offsetWidth / 2;
+                const centerY = galaxyDisplay.offsetHeight / 2;
+
+                orbitingPlanets.forEach((planet, index) => {
+                    const angle = (index / numPlanets) * 2 * Math.PI - (Math.PI / 2);
+                    
+                    const x = centerX + radiusX * Math.cos(angle) - (planet.offsetWidth / 2);
+                    const y = centerY + radiusY * Math.sin(angle) - (planet.offsetHeight / 2);
+
+                    planet.style.left = `${x}px`;
+                    planet.style.top = `${y}px`;
+                });
             }
             
             function initModal() {
@@ -204,13 +263,17 @@
                     if (lastFocusedElement) lastFocusedElement.focus();
                 }
 
-                elements.galaxyContainer.addEventListener('click', (e) => {
-                    const planetContainer = e.target.closest('.planet-container');
-                    if (planetContainer) {
-                        const index = planetContainer.getAttribute('data-index');
-                        openModal(index);
-                    }
-                });
+                const galaxyDisplay = document.getElementById('galaxy-display');
+                if(galaxyDisplay) {
+                    galaxyDisplay.addEventListener('click', (e) => {
+                        const planetContainer = e.target.closest('.planet-container');
+                        if (planetContainer) {
+                            const index = planetContainer.getAttribute('data-index');
+                            openModal(index);
+                        }
+                    });
+                }
+
 
                 elements.modal.closeBtn.addEventListener('click', closeModal);
                 elements.modal.backdrop.addEventListener('click', (e) => {
@@ -245,4 +308,9 @@
             initGalaxy();
             initModal();
             initScrollAnimations();
+            
+            setTimeout(() => {
+                positionPlanetsInOrbit();
+                window.addEventListener('resize', debounce(positionPlanetsInOrbit, 150));
+            }, 100);
         });
