@@ -1,4 +1,5 @@
- /* Custom Styles & Design Enhancements */
+
+        /* Custom Styles & Design Enhancements */
         :root {
             --bg-dark: #020412;
             --bg-space: #0a1128;
@@ -105,7 +106,6 @@
             position: relative; 
         }
         
-        /* ✨ FIX: Pauses the bobbing animation on hover so only scaling occurs */
         .planet-container:hover {
             animation-play-state: paused;
         }
@@ -154,9 +154,9 @@
 
         @media (min-width: 768px) {
              .planet-container.has-ring::before {
-                top: 64px; /* Half of desktop planet height (128px) */
-                width: 205px; /* 128px * 1.6 */
-                height: 205px; /* 128px * 1.6 */
+                 top: 64px; /* Half of desktop planet height (128px) */
+                 width: 205px; /* 128px * 1.6 */
+                 height: 205px; /* 128px * 1.6 */
              }
         }
 
@@ -174,6 +174,29 @@
             border-color: rgba(224, 224, 224, 0.4);
             box-shadow: 0 0 15px rgba(224, 224, 224, 0.3), inset 0 0 5px rgba(224, 224, 224, 0.2);
         }
+
+        /* ✨ NEW: Larger styles for the dedicated Prep Helper Moon section */
+        #prep-helper-display .planet {
+            width: 144px; /* 36 * 4 */
+            height: 144px;
+        }
+        #prep-helper-display .planet-container.has-ring::before {
+            top: 72px; /* half of 144px */
+            width: 230px; /* 144 * 1.6 */
+            height: 230px;
+        }
+
+        @media (min-width: 768px) {
+            #prep-helper-display .planet {
+                width: 192px; /* 48 * 4 */
+                height: 192px;
+            }
+            #prep-helper-display .planet-container.has-ring::before {
+                top: 96px; /* half of 192px */
+                width: 307px; /* 192 * 1.6 */
+                height: 307px;
+            }
+        }
         
         /* Moon Craters */
         .moon-crater {
@@ -187,16 +210,7 @@
         .crater-3 { top: 65%; left: 65%; width: 15%; height: 15%; }
 
 
-        /* Mobile/Desktop layout handling */
         @media (min-width: 768px) {
-            .prep-helper-moon {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                z-index: 10;
-                animation: none; 
-            }
             .orbiting-planet {
                 position: absolute;
                 transition: top 0.5s ease, left 0.5s ease;
