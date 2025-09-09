@@ -7,7 +7,7 @@
             { title: "اللجنة الاجتماعية والرحلات", color: "rgba(168, 85, 247, 0.8)", hasRing: true, content: `<h4 class="text-xl font-semibold text-accent mb-3">🎯 الأهداف</h4><ul class="list-disc list-inside space-y-2 mb-4"><li>تنمية الروابط الاجتماعية بين الطلاب وأعضاء هيئة التدريس.</li><li>إشاعة روح التعاون والأخوة وبث الروح الجامعية.</li><li>تنظيم الفعاليات والرحلات والمعسكرات.</li><li>دعم الطلاب غير القادرين ماديًا من خلال ميزانية التكافل.</li><li>توزيع دعم الكتاب الجامعي بما يحقق مبدأ تكافؤ الفرص.</li></ul><h4 class="text-xl font-semibold text-accent mt-4 mb-3">📌 الأنشطة والبرامج</h4><ul class="list-disc list-inside space-y-2"><li><b>مبادرات التكافل والدعم:</b> مثل "أدواتك لغيرك" وكتب غير المقتدرين.</li><li><b>الرحلات:</b> تنظيم رحلات ترفيهية لتجديد طاقات الطلاب.</li><li><b>الأنشطة الاجتماعية:</b> مثل إيفنت "حريفة هندسة" ودورات الشطرنج.</li></ul>` },
             { title: "اللجنة الرياضية", color: "rgba(249, 115, 22, 0.8)", hasRing: true, content: `<h4 class="text-xl font-semibold text-accent mb-3">🎯 الهدف</h4><ul class="list-disc list-inside space-y-2 mb-4"><li>بث الروح الرياضية بين الطلاب وتشجيع المواهب.</li><li>تنمية المهارات الرياضية وصقلها.</li><li>تنظيم الأنشطة الرياضية داخل الكلية.</li><li>المشاركة في المهرجانات الرياضية وتمثيل الكلية.</li></ul><h4 class="text-xl font-semibold text-accent mt-4 mb-3">📌 الأنشطة</h4><ul class="list-disc list-inside space-y-2"><li>دورة كرة القدم السنوية.</li><li>دورة تنس الطاولة (البنج).</li><li>إيفينت "حريفة هندسة".</li><li>متابعة منتخبات الكلية في مختلف الألعاب.</li></ul>` },
             { title: "اللجنة الفنية", color: "rgba(217, 70, 239, 0.8)", hasRing: true, content: `<h4 class="text-xl font-semibold text-accent mb-3">🎯 الهدف</h4><p class="mb-4">تهدف اللجنة الفنية إلى اكتشاف المواهب الفنية بين الطلاب ورعايتها، وتشجيع التعبير الإبداعي في مختلف المجالات مثل الرسم، والموسيقى، والتمثيل، والتصوير. تعمل اللجنة على إثراء الحياة الجامعية بالأنشطة الفنية التي تساهم في تنمية الذوق العام وبناء شخصية الطالب.</p><h4 class="text-xl font-semibold text-accent mt-4 mb-3">📌 الأنشطة</h4><ul class="list-disc list-inside space-y-2"><li>تنظيم المعارض الفنية لعرض أعمال الطلاب.</li><li>إقامة المسابقات الفنية في مختلف المجالات.</li><li>عقد ورش عمل فنية لتطوير مهارات الطلاب.</li><li>المشاركة في المهرجانات والفعاليات الفنية على مستوى الجامعة.</li></ul>` },
-            { title: "Prep Helper", color: "rgba(224, 224, 224, 0.9)", hasRing:false, content: `<h4 class="text-xl font-semibold text-accent mb-3">💡 إيه هو تيم بريب؟</h4><p class="mb-4">تيم بريب هو الصديق الشخصي لطلاب المستوى الصفري (إعدادي)، موجود دايمًا للرد على أي استفسار أو مشكلة بتواجههم.<br>ببساطة… هو ChatGPT بتاع طالب إعدادي 👨‍🎓✨</p><h4 class="text-xl font-semibold text-accent mt-4 mb-3">🎯 الهدف من وجوده</h4><ul class="list-disc list-inside space-y-2 mb-4"><li>توفير وسيلة سهلة للتواصل بين طلاب إعدادي والمسؤولين عنهم.</li><li>سرعة الرد على الاستفسارات.</li><li>توحيد مصدر المعلومة وضمان صحتها وموثوقيتها.</li></ul><h4 class="text-xl font-semibold text-accent mt-4 mb-3">📞 إزاي نتواصل معاهم؟</h4><p>عن طريق الواتساب على الرقم المخصص للفريق:<br><a href="https://wa.me/201228487925" class="font-bold text-white hover:underline text-lg" target="_blank" dir="ltr">📱 +20 12 28487925</a></p>` },
+            { title: "Prep Helper", color: "rgba(224, 224, 224, 0.9)", hasRing: false, content: `<h4 class="text-xl font-semibold text-accent mb-3">💡 إيه هو تيم بريب؟</h4><p class="mb-4">تيم بريب هو الصديق الشخصي لطلاب المستوى الصفري (إعدادي)، موجود دايمًا للرد على أي استفسار أو مشكلة بتواجههم.<br>ببساطة… هو ChatGPT بتاع طالب إعدادي 👨‍🎓✨</p><h4 class="text-xl font-semibold text-accent mt-4 mb-3">🎯 الهدف من وجوده</h4><ul class="list-disc list-inside space-y-2 mb-4"><li>توفير وسيلة سهلة للتواصل بين طلاب إعدادي والمسؤولين عنهم.</li><li>سرعة الرد على الاستفسارات.</li><li>توحيد مصدر المعلومة وضمان صحتها وموثوقيتها.</li></ul><h4 class="text-xl font-semibold text-accent mt-4 mb-3">📞 إزاي نتواصل معاهم؟</h4><p>عن طريق الواتساب على الرقم المخصص للفريق:<br><a href="https://wa.me/201228487925" class="font-bold text-white hover:underline text-lg" target="_blank" dir="ltr">📱 +20 12 28487925</a></p>` },
         ];
 
         // Main App Logic
@@ -16,7 +16,6 @@
                 loader: document.getElementById('loader'),
                 mainContent: document.getElementById('main-content'),
                 starCanvas: document.getElementById('star-canvas'),
-                galaxyContainer: document.querySelector('#galaxy .grid'),
                 modal: {
                     backdrop: document.getElementById('modal-backdrop'),
                     content: document.getElementById('modal-content'),
@@ -54,8 +53,8 @@
                             x: Math.random() * elements.starCanvas.width,
                             y: Math.random() * elements.starCanvas.height,
                             radius: Math.random() * 1.5 + 0.5,
-                            vx: (Math.random() - 0.5) * 0.2,
-                            vy: (Math.random() - 0.5) * 0.2,
+                            vx: (Math.random() - 0.5) * 0.7, // ✨ MODIFIED: Increased speed from 0.2
+                            vy: (Math.random() - 0.5) * 0.7, // ✨ MODIFIED: Increased speed from 0.2
                             opacity: Math.random() * 0.5 + 0.5,
                             twinkleSpeed: Math.random() * 0.02
                         });
@@ -63,7 +62,8 @@
                 }
 
                 function createShootingStar() {
-                    if (Math.random() < 0.005 && shootingStars.length < 3) {
+                    // ✨ MODIFIED: Increased probability from 0.005
+                    if (Math.random() < 0.02 && shootingStars.length < 3) { 
                         shootingStars.push({
                             x: Math.random() * elements.starCanvas.width,
                             y: Math.random() * 100,
@@ -143,59 +143,66 @@
                     }, 2500);
                 });
             }
-            
-            function initGalaxy() {
+
+            // ✨ REFACTORED: This function creates any celestial body
+            const createCelestialBody = (committee, isMoon = false) => {
+                const planetContainer = document.createElement('div');
+                planetContainer.className = 'planet-container';
+                planetContainer.dataset.index = committeesData.indexOf(committee);
+
+                if (isMoon) {
+                    planetContainer.classList.add('prep-helper-moon');
+                } else {
+                    planetContainer.classList.add('orbiting-planet');
+                }
+                
+                if (committee.hasRing) {
+                    planetContainer.classList.add('has-ring');
+                }
+                
+                planetContainer.style.animationDelay = `${Math.random() * 0.5}s`;
+                planetContainer.style.animationDuration = `${Math.random() * 4 + 6}s`;
+
+                const planetDiv = document.createElement('div');
+                planetDiv.className = `planet w-24 h-24 md:w-32 md:h-32`;
+                planetDiv.style.backgroundColor = committee.color;
+                planetDiv.style.setProperty('--planet-color', committee.color);
+                
+                if (isMoon) {
+                    for(let i = 1; i <= 3; i++) {
+                        const crater = document.createElement('div');
+                        crater.className = `moon-crater crater-${i}`;
+                        planetDiv.appendChild(crater);
+                    }
+                }
+
+                const planetNameSpan = document.createElement('span');
+                planetNameSpan.className = 'planet-name';
+                planetNameSpan.textContent = committee.title;
+
+                planetContainer.appendChild(planetDiv);
+                planetContainer.appendChild(planetNameSpan);
+                return planetContainer;
+            };
+
+            // ✨ REFACTORED: Initialize both galaxy and prep helper sections
+            function initCelestialBodies() {
                 const galaxyDisplay = document.getElementById('galaxy-display');
-                if (!galaxyDisplay) return;
+                const prepHelperDisplay = document.getElementById('prep-helper-display');
+                if (!galaxyDisplay || !prepHelperDisplay) return;
+
                 galaxyDisplay.innerHTML = ''; 
+                prepHelperDisplay.innerHTML = '';
 
                 const prepHelperData = committeesData.find(c => c.title.includes("Prep Helper"));
                 const otherCommittees = committeesData.filter(c => !c.title.includes("Prep Helper"));
 
-                const createCelestialBody = (committee, isMoon = false) => {
-                    const planetContainer = document.createElement('div');
-                    planetContainer.className = 'planet-container';
-                    planetContainer.dataset.index = committeesData.indexOf(committee);
-
-                    if (isMoon) {
-                        planetContainer.classList.add('prep-helper-moon');
-                    } else {
-                        planetContainer.classList.add('orbiting-planet');
-                    }
-                    
-                    if (committee.hasRing) {
-                        planetContainer.classList.add('has-ring');
-                    }
-                    
-                    planetContainer.style.animationDelay = `${Math.random() * 0.5}s`;
-                    planetContainer.style.animationDuration = `${Math.random() * 4 + 6}s`;
-
-                    const planetDiv = document.createElement('div');
-                    planetDiv.className = `planet w-24 h-24 md:w-32 md:h-32`;
-                    planetDiv.style.backgroundColor = committee.color;
-                    planetDiv.style.setProperty('--planet-color', committee.color);
-                    
-                    if (isMoon) {
-                        for(let i = 1; i <= 3; i++) {
-                            const crater = document.createElement('div');
-                            crater.className = `moon-crater crater-${i}`;
-                            planetDiv.appendChild(crater);
-                        }
-                    }
-
-                    const planetNameSpan = document.createElement('span');
-                    planetNameSpan.className = 'planet-name';
-                    planetNameSpan.textContent = committee.title;
-
-                    planetContainer.appendChild(planetDiv);
-                    planetContainer.appendChild(planetNameSpan);
-                    return planetContainer;
-                };
-                
+                // Create and place the Prep Helper Moon
                 if (prepHelperData) {
-                    galaxyDisplay.appendChild(createCelestialBody(prepHelperData, true));
+                    prepHelperDisplay.appendChild(createCelestialBody(prepHelperData, true));
                 }
                 
+                // Create and place the other planets in the galaxy
                 otherCommittees.forEach(committee => {
                     galaxyDisplay.appendChild(createCelestialBody(committee, false));
                 });
@@ -263,17 +270,14 @@
                     if (lastFocusedElement) lastFocusedElement.focus();
                 }
 
-                const galaxyDisplay = document.getElementById('galaxy-display');
-                if(galaxyDisplay) {
-                    galaxyDisplay.addEventListener('click', (e) => {
-                        const planetContainer = e.target.closest('.planet-container');
-                        if (planetContainer) {
-                            const index = planetContainer.getAttribute('data-index');
-                            openModal(index);
-                        }
-                    });
-                }
-
+                // Attach listener to the whole document to catch clicks from both sections
+                document.addEventListener('click', (e) => {
+                    const planetContainer = e.target.closest('.planet-container');
+                    if (planetContainer) {
+                        const index = planetContainer.getAttribute('data-index');
+                        openModal(index);
+                    }
+                });
 
                 elements.modal.closeBtn.addEventListener('click', closeModal);
                 elements.modal.backdrop.addEventListener('click', (e) => {
@@ -305,10 +309,11 @@
             // --- Initialize all modules ---
             initStarfield();
             initLoader();
-            initGalaxy();
+            initCelestialBodies();
             initModal();
             initScrollAnimations();
             
+            // Wait a moment for layout to settle before positioning planets
             setTimeout(() => {
                 positionPlanetsInOrbit();
                 window.addEventListener('resize', debounce(positionPlanetsInOrbit, 150));
